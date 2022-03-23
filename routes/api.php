@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Categories\CategoryController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return 'Hello';
-});
+Route::resource('categories', CategoryController::class);
