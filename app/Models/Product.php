@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    public function getRouteName()
+    public function getRouteKeyName()
     {
         return 'slug';
     }
